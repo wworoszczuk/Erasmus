@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../../Downloads/lightbox"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "LasPalmas2023"
+	}
+}

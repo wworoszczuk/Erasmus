@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LAS PALMAS 2023</title>
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.svg">
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <!-- CSS file -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- JS file -->
+    <script src="script.js"></script> 
+
+    <link rel="stylesheet" href="lightbox.min.css">
+    <script src="lightbox-plus-jquery.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const scrollToTopButton = document.getElementById('scroll-to-top');
+
+        
+            window.addEventListener('scroll', function () {
+                if (window.scrollY > 200) {
+                scrollToTopButton.classList.remove('hidden');
+                } else {
+                scrollToTopButton.classList.add('hidden');
+                }
+            });
+
+
+            scrollToTopButton.addEventListener('click', function () {
+                window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+
+    <header id="header" class="header">
+        <a href="members.html">
+            <img src="assets/images/erasmus_logo.png" alt="Logo Erasmus" id="erasmus_logo">
+        </a>
+        <nav id="navbar" class="navbar">
+            <ul> 
+              <li><a href="members.html" style="font-weight: 800">Gran Canaria</a></li>
+              <li><a href="documents.html">Dokumenty</a></li>
+            </ul>
+        </nav>
+        <menu>
+            <img id="menu-icon" src="assets/images/menu.png" alt="Menu"> 
+        </menu>
+    </header>
+    <nav id="mobile-nav">
+        <ul>
+            <li>
+                <a href="members.html">
+                    <span class="material-icons">groups</span>
+                    Uczestnicy
+                </a>
+            </li>
+            <li>
+                <a href="island.html">
+                    <span class="material-icons">hiking</span>
+                    O wyspie
+                </a>
+            </li>
+            <li>
+                <a href="work.html">
+                    <span class="material-icons">engineering</span>
+                    Praca
+                </a>
+            </li>
+            <li>
+                <a href="gallery.html" style="font-weight: 600;">
+                    <span class="material-icons">photo_camera</span>
+                    Galeria
+                </a>
+            </li>
+            <li>
+                <a href="documents.html">
+                    <span class="material-icons">description</span>
+                    Dokumenty
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <nav class="navbar">
+        <ul id="sections"> 
+            <li>
+                <a href="members.html">
+                    <span class="material-icons">groups</span>
+                    Uczestnicy
+                </a>
+            </li>
+            <li>
+                <a href="island.html">
+                    <span class="material-icons">hiking</span>
+                    O wyspie
+                </a>
+            </li>
+            <li>
+                <a href="work.html">
+                    <span class="material-icons">engineering</span>
+                    Praca
+                </a>
+            </li>
+            <li>
+                <a href="gallery.html" style="font-weight: 600;">
+                    <span class="material-icons">photo_camera</span>
+                    Galeria
+                </a>
+            </li>
+        </ul>
+
+        <ul id="weathermark"> 
+            <li>
+                <div id="weathermark-laspalmas" class="weather-mark"></div>
+            </li>
+            <li>
+                <div id="weathermark-warsaw" class="weather-mark"></div>
+            </li>
+        </ul>
+    </nav>
+    <hr style="color: #ffffff80;">
+
+    <div id="gallery">
+        <a href="assets/images/image1.jpg" data-lightbox="gallery">
+            <img src="assets/images/image1.jpg" alt="">
+        </a>
+        <a href="assets/images/image2.jpg" data-lightbox="gallery">
+            <img src="assets/images/image2.jpg" alt="">
+        </a>
+        <a href="assets/images/image3.jpg" data-lightbox="gallery">
+            <img src="assets/images/image3.jpg" alt="">
+        </a>
+        <a href="assets/images/image4.JPEG" data-lightbox="gallery">
+            <img src="assets/images/image4.jpeg" alt="">
+        </a>
+        <a href="assets/images/image5.jpg" data-lightbox="gallery">
+            <img src="assets/images/image5.jpg" alt="">
+        </a>
+        <a href="assets/images/image6.jpeg" data-lightbox="gallery">
+            <img src="assets/images/image6.jpeg" alt="">
+        </a>
+        <a href="assets/images/image7.jpg" data-lightbox="gallery">
+            <img src="assets/images/image7.jpg" alt="">
+        </a>
+        <a href="assets/images/image8.jpeg" data-lightbox="gallery">
+            <img src="assets/images/image8.jpeg" alt="">
+        </a>
+        <a href="assets/images/image9.jpeg" data-lightbox="gallery">
+            <img src="assets/images/image9.jpeg" alt="">
+        </a>
+        <a href="assets/images/image10.jpeg" data-lightbox="gallery" >
+            <img src="assets/images/image10.jpeg" alt="">
+        </a>
+        <a href="assets/images/image11.jpeg" data-lightbox="gallery" >
+            <img src="assets/images/image11.jpeg" alt="">
+        </a>
+        <a href="assets/images/image12.jpeg" data-lightbox="gallery" >
+            <img src="assets/images/image12.jpeg" alt="">
+        </a>
+        <a href="assets/images/image13.jpg" data-lightbox="gallery" >
+            <img src="assets/images/image13.jpg" alt="">
+        </a>
+        <a href="assets/images/image14.jpeg" data-lightbox="gallery">
+            <img src="assets/images/image14.jpeg" alt="">
+        </a>
+        <a href="assets/images/image15.jpeg" data-lightbox="gallery">
+            <img src="assets/images/image15.jpeg" alt="">
+        </a>
+        <a href="assets/images/image16.jpg" data-lightbox="gallery">
+            <img src="assets/images/image16.jpg" alt="">
+        </a>
+        <a href="assets/images/image17.jpg" data-lightbox="gallery">
+            <img src="assets/images/image17.jpg" alt="">
+        </a>
+        <a href="assets/images/image18.jpg" data-lightbox="gallery">
+            <img src="assets/images/image18.jpg" alt="">
+        </a>
+        <a href="assets/images/image19.jpg" data-lightbox="gallery">
+            <img src="assets/images/image19.jpg" alt="">
+        </a>
+        <a href="assets/images/image20.jpg" data-lightbox="gallery">
+            <img src="assets/images/image20.jpg" alt="">
+        </a>
+        <a href="assets/images/image21.jpg" data-lightbox="gallery">
+            <img src="assets/images/image21.jpg" alt="">
+        </a>
+        <a href="assets/images/image22.jpg" data-lightbox="gallery">
+            <img src="assets/images/image22.jpg" alt="">
+        </a>
+        <a href="assets/images/image23.jpg" data-lightbox="gallery">
+            <img src="assets/images/image23.jpg" alt="">
+        </a>
+        <a href="assets/images/image24.jpg" data-lightbox="gallery">
+            <img src="assets/images/image24.jpg" alt="">
+        </a>
+        <a href="assets/images/image25.jpg" data-lightbox="gallery">
+            <img src="assets/images/image25.jpg" alt="">
+        </a>
+        <a href="assets/images/image26.jpg" data-lightbox="gallery">
+            <img src="assets/images/image26.jpg" alt="">
+        </a>
+        <a href="assets/images/image27.jpg" data-lightbox="gallery">
+            <img src="assets/images/image27.jpg" alt="">
+        </a>
+        <a href="assets/images/image28.jpg" data-lightbox="gallery">
+            <img src="assets/images/image28.jpg" alt="">
+        </a>
+        <a href="assets/images/image29.jpg" data-lightbox="gallery">
+            <img src="assets/images/image29.jpg" alt="">
+        </a>
+        <a href="assets/images/image30.jpg" data-lightbox="gallery">
+            <img src="assets/images/image30.jpg" alt="">
+        </a>
+        <a href="assets/images/image31.jpg" data-lightbox="gallery">
+            <img src="assets/images/image31.jpg" alt="">
+        </a>
+        <a href="assets/images/image32.jpg" data-lightbox="gallery">
+            <img src="assets/images/image32.jpg" alt="">
+        </a>
+        <a href="assets/images/image33.jpg" data-lightbox="gallery">
+            <img src="assets/images/image33.jpg" alt="">
+        </a>
+        <a href="assets/images/image34.jpg" data-lightbox="gallery">
+            <img src="assets/images/image34.jpg" alt="">
+        </a>
+        <a href="assets/images/image35.jpg" data-lightbox="gallery">
+            <img src="assets/images/image35.jpg" alt="">
+        </a>
+        <a href="assets/images/image36.jpg" data-lightbox="gallery">
+            <img src="assets/images/image36.jpg" alt="">
+        </a>
+        <a href="assets/images/image37.jpg" data-lightbox="gallery">
+            <img src="assets/images/image37.jpg" alt="">
+        </a>
+        <a href="assets/images/image38.jpg" data-lightbox="gallery">
+            <img src="assets/images/image38.jpg" alt="">
+        </a>
+        <a href="assets/images/image39.jpg" data-lightbox="gallery">
+            <img src="assets/images/image39.jpg" alt="">
+        </a>
+        <a href="assets/images/image40.jpg" data-lightbox="gallery">
+            <img src="assets/images/image40.jpg" alt="">
+        </a>
+        <a href="assets/images/image41.jpg" data-lightbox="gallery">
+            <img src="assets/images/image41.jpg" alt="">
+        </a>
+        <a href="assets/images/image42.jpg" data-lightbox="gallery">
+            <img src="assets/images/image42.jpg" alt="">
+        </a>
+        <a href="assets/images/image43.jpg" data-lightbox="gallery">
+            <img src="assets/images/image43.jpg" alt="">
+        </a>
+        <a href="assets/images/image44.jpg" data-lightbox="gallery">
+            <img src="assets/images/image44.jpg" alt="">
+        </a>
+        <a href="assets/images/image45.jpg" data-lightbox="gallery">
+            <img src="assets/images/image45.jpg" alt="">
+        </a>
+        <a href="assets/images/image46.jpg" data-lightbox="gallery">
+            <img src="assets/images/image46.jpg" alt="">
+        </a>
+        <a href="assets/images/image47.jpg" data-lightbox="gallery">
+            <img src="assets/images/image47.jpg" alt="">
+        </a>
+        <a href="assets/images/image48.jpg" data-lightbox="gallery">
+            <img src="assets/images/image48.jpg" alt="">
+        </a>
+        <a href="assets/images/image49.jpg" data-lightbox="gallery">
+            <img src="assets/images/image49.jpg" alt="">
+        </a>
+        <a href="assets/images/image50.jpg" data-lightbox="gallery">
+            <img src="assets/images/image50.jpg" alt="">
+        </a>
+        <a href="assets/images/image51.jpg" data-lightbox="gallery">
+            <img src="assets/images/image51.jpg" alt="">
+        </a>
+        <a href="assets/images/image52.jpg" data-lightbox="gallery">
+            <img src="assets/images/image52.jpg" alt="">
+        </a>
+        <a href="assets/images/image53.jpg" data-lightbox="gallery">
+            <img src="assets/images/image53.jpg" alt="">
+        </a>
+        <a href="assets/images/image54.jpg" data-lightbox="gallery">
+            <img src="assets/images/image54.jpg" alt="">
+        </a>
+        <a href="assets/images/image55.jpeg" data-lightbox="gallery">
+            <img src="assets/images/image55.jpeg" alt="">
+        </a>
+        <a href="assets/images/image56.jpg" data-lightbox="gallery">
+            <img src="assets/images/image56.jpg" alt="">
+        </a>
+        <a href="assets/images/image57.jpeg" data-lightbox="gallery">
+            <img src="assets/images/image57.jpeg" alt="">
+        </a>
+        <a href="assets/images/image58.jpeg" data-lightbox="gallery">
+            <img src="assets/images/image58.jpeg" alt="">
+        </a>
+        <a href="assets/images/image59.jpg" data-lightbox="gallery">
+            <img src="assets/images/image59.jpg" alt="">
+        </a>
+        <a href="assets/images/image60.jpeg" data-lightbox="gallery">
+            <img src="assets/images/image60.jpeg" alt="">
+        </a>
+        <a href="assets/images/image61.jpg" data-lightbox="gallery">
+            <img src="assets/images/image61.jpg" alt="">
+        </a>
+        <a href="assets/images/image62.jpg" data-lightbox="gallery">
+            <img src="assets/images/image62.jpg" alt="">
+        </a>
+        <a href="assets/images/image63.jpg" data-lightbox="gallery">
+            <img src="assets/images/image63.jpg" alt="">
+        </a>
+        <a href="assets/images/image64.jpg" data-lightbox="gallery">
+            <img src="assets/images/image64.jpg" alt="">
+        </a>
+    </div>
+
+    <div id="scroll-to-top" class="hidden">
+        <span class="material-icons">arrow_upward</span>
+    </div>
+
+    <div id="madeby">
+        <p style="color:white;">Made with ❤ by <a href="https://www.linkedin.com/in/weronika-woroszczuk/" target=”_blank”>@weronika-woroszczuk</a></p>
+    </div>
+    
+</body>
+</html>

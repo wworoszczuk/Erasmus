@@ -1,0 +1,632 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: "Montserrat";
+}
+
+body{
+    background-color: #0D1117;
+}
+
+.header{
+    height: 15vh;
+    background-color: #24292F;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+
+#erasmus_logo{
+    max-width: 200px; 
+}
+
+menu{
+    display: none;
+    cursor: pointer;
+}
+
+#mobile-nav {
+    display: none;
+    position: absolute;
+    right:0;
+    padding: 20px;
+    background-color: #24292F;
+    border-radius: 10px;
+    border: 0.5px solid #fff;
+    scale: 120%;
+    z-index: 1;
+    margin: 30px;
+}
+
+#mobile-nav *{
+    text-decoration: none;
+    list-style: none;
+    margin: 5px 5px;
+}
+#mobile-nav ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar{
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.navbar li a{
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    margin: 0 20px;
+}
+.navbar li a span{
+    margin-right: 6px;
+}
+
+  
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+    font-size: 22px;
+}
+
+.navbar li:hover a,
+.navbar li:hover .material-icons {
+    color: #3A66B2;
+}
+
+.navbar #sections li a{
+    margin-left: 5px;
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    flex-shrink: 0;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+  
+.weather-mark {
+    visibility: hidden;
+    margin: 0 10px;
+    background-color: #0d1117cb;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #24292F;
+    transition: all 1s;
+}
+
+
+.members{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.member{
+    width: 30%;
+    margin: 20px;
+    padding: 20px;
+    background-color: #24292F;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ffffff71;
+}
+
+.member .member-image{
+    border-radius: 100%;
+    width: 47%;
+    margin-right: 30px;
+}
+
+.member .member-description{
+    color: #818181;
+    margin-top: 9px;
+}
+
+.member .member-label{
+    background-color: #818181;
+    border: none;
+    border-radius: 8px;
+    padding: 5px;
+    margin-top: 9px;
+}
+
+.documents{
+    display: flex;
+    width: 95vw;
+    height: calc(85vh - 30px);
+}
+
+.documents-navigation{
+    height: 100%;
+    flex-grow: 1;
+    border-radius: 20px;
+    margin: 15px;
+}
+
+.documents-navigation ul{
+    list-style: none;
+    margin: 20px;
+}
+
+.documents-navigation li{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#document-list li.active {
+    font-weight: bold;
+    background-color: #24292F;
+    border-radius: 20px;
+}
+
+.document-page{
+    height: 100%;
+    flex-grow: 3;
+}
+
+iframe{
+    border-radius: 20px;
+    margin: 15px auto 15px;
+}
+
+.documents-navigation button{
+    background-color: transparent;
+    border: none;
+    margin: 20px;
+    color: #818181;
+}
+
+.documents-navigation button:hover{
+    cursor: pointer;
+    color: #fff;
+}
+
+.documents-navigation li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.documents-navigation li:hover{
+    background-color: #24292F;
+    border-radius: 20px;
+}
+
+#gallery{
+    display: flex;
+    flex-wrap: wrap;
+    width: 95vw;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 50px;
+}
+
+#gallery img{
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    margin-bottom: 20px;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+
+#gallery img:hover{
+    scale: 95%;
+}
+
+#scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 50%;
+    background-color: #24292F;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s ease-in-out;
+}
+  
+#scroll-to-top.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.work-images{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 10px;
+    margin: 10px;
+}
+
+.work-images img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+    border-radius: 5px;
+    margin: 10px;
+    transition: all 0.5s;
+}
+
+.work-images img:hover{
+    scale: 90%;
+}
+
+.work-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.work {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.work h3{
+    margin: 40px;
+    font-size: 32px;
+}
+
+.work .work-description{
+    padding: 50px;
+    font-size: 20px;
+    max-width: 45vw;
+}
+
+.work .work-description li{
+    background-color: #24292F;
+    border-radius: 10px;
+    margin: 10px 5px;
+    padding: 10px;
+    display: inline;
+}
+
+.work .work-description ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#madeby{
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    text-align: center;
+}
+
+#island-content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px 50px;
+    position: relative;
+}
+
+#island-content h1{
+    margin: 20px auto;
+    text-align: center;
+}
+
+#island-content>p{
+    font-size: larger;
+    text-align: center;
+}
+
+.island-subcontent{
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+    width: 100%;
+    justify-content: space-between;
+    position: relative; 
+}
+
+.island-subcontent ul{
+    margin: 20px auto;
+}
+
+.island-subcontent li{
+    list-style: none;
+    margin-bottom: 14px;
+    margin-right: 60px;
+    padding: 10px;
+    background-color: #24292F;
+    border-radius: 10px;
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+}
+
+.island-subcontent li p{
+    display: flex;
+    flex-direction: column;
+}
+
+.island-description img{
+    width:40%;
+    height:40%;
+    border-radius: 10px;
+}
+
+.island-subcontent>img{
+    width:100%;
+    height:40%;
+    border-radius: 10px;
+}
+
+#island-home-description p,#h2{
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+
+
+
+.island-subcontent p{
+    display: flex;
+    flex-direction: row;
+}
+
+.island-images{
+    width: 100%;
+    display: flex;
+    margin-left: 50px;
+}
+
+.island-images img{
+    margin: 40px 40px;
+    border-radius: 6px;
+}
+
+.island-description ul li p{
+    margin-right: 20px;
+}
+
+.island-description ul li b{
+    margin-bottom: 6px;
+}
+
+#island-map {
+    padding: 30px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+#dishes{
+    position: sticky;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.dish{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #24292F;
+    border-radius: 10px;
+    width: 30%;
+    margin: 1vw;
+    padding: 20px;
+    text-align: center;
+}
+
+.dish *{
+    margin-top: 15px;
+}
+
+.dish img{
+    width: 90%;
+    border-radius: 10px;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 1200px) {
+
+    .member{
+        width: 40%;
+    }
+
+    .work-section {
+        flex-direction: column;
+    }
+
+    .work .work-description{
+        padding: 50px;
+        font-size: 20px;
+        max-width: 100vw;
+        font-size: 90%;;
+    }
+
+    .work-images img{
+        width: 90%;
+        height: 90%;
+    }
+
+    .island-subcontent{
+        flex-direction: column;
+    }
+    .island-subcontent>img{
+        display: none;
+    }
+
+    .island-images img{
+        width: 300px;
+        margin: 20px;
+    }
+
+    .island-description{
+        margin-bottom: 40px;
+    }
+
+    #island-home-description p, #h2 {
+        margin-left: 0px;
+        width: 85vw;
+    }
+
+    .island-subcontent li{
+        flex-direction: column;
+        margin-right: 0;
+    }
+
+    .island-subcontent li *{
+        margin-bottom: 5px;
+    }
+
+    .island-subcontent li img{
+        width: 100%;
+    }
+
+    .documents{
+        flex-direction: column;
+        align-items: center;
+    }
+    .document-page{
+        width: 90vw;
+    }
+}
+
+@media only screen and (max-width: 1010px) {
+
+
+
+    .navbar{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar #sections{
+        margin:20px;
+    }
+
+    hr{
+        display: none;
+    }
+
+    .dish{
+        width: 47%;
+        margin: 2% 1%;
+        font-size: larger;
+    }
+    
+    .island-images{
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+
+    menu{
+        display: block;
+    }
+
+    header .navbar{
+        display: none;
+    }
+
+    .header{
+        height: 10vh;
+    }
+
+    .navbar #sections{
+        display: none;
+    }
+
+    .navbar li{
+        margin: 2vw;
+        justify-content: space-between;
+    }
+
+    #mobile-nav.show-menu {
+        display: block;
+    }
+
+
+    .member{
+        width: 80%;
+    }
+
+    #island-content{
+        margin: 20px 20px;
+    }
+
+
+    #island-content>p{
+        font-size: medium;
+    }
+
+    .dish{
+        width: 100%;
+        margin: 5%;
+        font-size: larger;
+    }
+
+    .island-images{
+        flex-direction: column;
+        margin-left: 0;
+    }
+}
+
+/* Firefox */
+@-moz-document url-prefix() {
+    #island-map {
+        height: 90vh;
+        width: auto;
+    }
+    .island-subcontent > img {
+        height: 50vh;
+        width: auto;
+    }
+    .island-description img {
+       width: 180%;
+    }
+}
